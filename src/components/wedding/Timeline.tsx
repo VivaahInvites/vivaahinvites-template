@@ -47,8 +47,7 @@ export function Timeline() {
                 width={400}
                 height={400}
                 onError={(ev) => {
-                  ev.currentTarget.src =
-                    "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85";
+                  ev.currentTarget.src = "/images/weddingImg.webp";
                 }}
                 className="h-24 w-24 sm:h-36 sm:w-36 shrink-0 rounded-2xl border-2 border-[#d4af37]/80 object-cover shadow-sm mt-0.5"
               />
