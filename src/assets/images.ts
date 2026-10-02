@@ -1,0 +1,9 @@
+export const coverImg = "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&w=1024&q=85";
+export const coupleImg = "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1024&q=85";
+export const ganeshaImg = "https://images.unsplash.com/photo-1567591414240-e145bcf5622a?auto=format&fit=crop&w=600&q=85";
+export const haldiImg = "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85";
+export const mehendiImg = "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85";
+export const sangeetImg = "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=85";
+export const weddingImg = "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85";
+export const baraatImg = "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=800&q=85";
+export const receptionImg = "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=85";

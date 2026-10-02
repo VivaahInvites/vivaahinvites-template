@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #fdfbf7;
+    --foreground: #2d1810;
+    --card: rgba(255, 253, 248, 0.90);
+    --card-foreground: #2d1810;
+    --primary: #822227;
+    --primary-foreground: #ffffff;
+    --secondary: #d4af37;
+    --secondary-foreground: #2d1810;
+    --muted: #f6efe4;
+    --muted-foreground: #745e52;
+    --border: rgba(212, 175, 55, 0.38);
+
+    --blush: #fcf6ee;
+    --blush-deep: #f5e8d5;
+    --lavender: #faf4e8;
+    --peach: #fdf6ec;
+    --beige: #faf5eb;
+    --gold: #d4af37;
+    --gold-deep: #b8860b;
+    --crimson: #822227;
+    --ivory: #fffdf9;
+
+    --gradient-gold: linear-gradient(135deg, #d4af37 0%, #fef3c7 45%, #b8860b 100%);
+    --gradient-dreamy: linear-gradient(180deg, #fffdf9 0%, #faf4e8 45%, #f5ece0 100%);
+    --shadow-gold: 0 10px 25px -3px rgba(212, 175, 55, 0.30), 0 4px 6px -4px rgba(212, 175, 55, 0.18);
+  }
+
+  body {
+    background: var(--gradient-dreamy);
+    background-attachment: fixed;
+    color: var(--foreground);
+    font-family: 'Jost', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', 'Alex Brush', cursive;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-hindi {
+  font-family: 'Tiro Devanagari Hindi', 'Rozha One', 'Playfair Display', serif;
+}
+
+.text-crimson {
+  color: var(--crimson);
+}
+
+.bg-ivory {
+  background-color: var(--ivory);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 12px 30px -8px rgba(136, 19, 55, 0.08), 0 4px 14px -2px rgba(212, 175, 55, 0.15);
+  position: relative;
+}
+
+/* Subtle regal golden aura behind boxes so background never looks empty */
+.royal-backdrop-glow {
+  position: absolute;
+  inset: -12px;
+  background: radial-gradient(circle, rgba(254, 240, 138, 0.22) 0%, rgba(212, 175, 55, 0.08) 50%, transparent 75%);
+  border-radius: 2rem;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.gold-frame {
+  position: relative;
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.12), 0 16px 36px -10px rgba(136, 19, 55, 0.1);
+}
+
+.hairline-gold {
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  height: 1px;
+}
+
+.btn-royal {
+  background: linear-gradient(135deg, #822227 0%, #9e2d33 50%, #68181d 100%);
+  color: #fffaf0;
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  box-shadow: 0 4px 14px rgba(130, 34, 39, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-royal:hover {
+  background: linear-gradient(135deg, #96272d 0%, #b33239 50%, #822227 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(130, 34, 39, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-royal:active {
+  transform: translateY(0);
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 30px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.7), 0 0 50px rgba(212, 175, 55, 0.4);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  25% {
+    transform: translateY(28vh) translateX(20px) rotate(80deg);
+  }
+  50% {
+    transform: translateY(58vh) translateX(-20px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(86vh) translateX(18px) rotate(260deg);
+  }
+  92% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(114vh) translateX(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+[style*="animation: petal-fall"],
+[style*="animation:petal-fall"] {
+  animation-name: petalFall !important;
+}
+
+[style*="animation: float-up"],
+[style*="animation:float-up"] {
+  animation-name: floatUp !important;
+}
