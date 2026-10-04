@@ -1,0 +1,9 @@
+export const coverImg = "/images/coverImg.webp";
+export const coupleImg = "/images/coupleImg.webp";
+export const ganeshaImg = "/images/ganeshaImg.webp";
+export const haldiImg = "/images/haldiImg.webp";
+export const mehendiImg = "/images/mehendiImg.webp";
+export const sangeetImg = "/images/sangeetImg.webp";
+export const weddingImg = "/images/weddingImg.webp";
+export const baraatImg = "/images/weddingImg.webp";
+export const receptionImg = "/images/receptionImg.webp";

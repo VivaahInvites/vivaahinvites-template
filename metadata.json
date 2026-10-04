@@ -1,0 +1,6 @@
+{
+  "name": "Aman & Neha — Royal Wedding Invitation",
+  "description": "Interactive royal wedding invitation for Aman & Neha in Agra with cover, countdown, live scratch card, events timeline, and ambient music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
